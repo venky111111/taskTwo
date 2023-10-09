@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.name{
+  padding-left: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.sub{
+    width: 100%;
+    height: 100vh; 
+    background: linear-gradient(to right, rgb(86, 88, 233) 65%, rgb(213, 249, 123) 35%);
+}
+
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(190, 238, 67);
+    margin-left: 50px;
+    padding-top: 30px;
+
+    
+}
+.div2 h1::after {
+    content: "..."; /* Add the dots as content */
+    color: rgb(250, 61, 13); /* Set the dot color */
+}
+
+
+.nav{
+    /* border: 5px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+   
+}
+ul{
+    list-style-type:none;
+    text-decoration: none;
+    margin-right:40px;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+   position:relative ;
+   padding-top: 30px;
+   font-weight: bold;
+   
+   
+}
+li{
+    float: right;
+    margin-left:30px;
+}
+li a{
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    background-color:rgb(71, 92, 248);
+   
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    
+}
+li a:hover{
+    
+    background-color: rgb(211, 65, 65);
+}
+.active a{
+    background-color: rgb(250, 61, 13);
+}
+.dev{
+    margin-top:10px;
+}
+.div2 {
+
+    color:rgb(190, 238, 67);
+    float: left;
+    padding: 0;
+    margin-top: 150px;
+    margin-left: 100px;
+   width: 400px;
+  
+  
+  
+}
+.div2-h1{
+    font-size: 60px;
+
+}
+.div2-p{
+   padding-left: 50px;
+}
+
+img{
+    margin-left: 360px;
+    border-bottom: 5px solid rgb(250, 61, 13);
+   
+    border-right: 5px solid rgb(250, 61, 13);
+   
+   
+    
+    margin-top: 180px;
+    --s: 50px; /* the size on the corner */
+    --t: 5px;  /* the thickness of the border */
+    --g: 10px; /* the gap between the border and image */
+    
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #ed424e; /* the color here */
+    outline-offset: calc(-1*var(--t));
+    -webkit-mask:
+      conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+      0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+      linear-gradient(#000 0 0) content-box;
+}
+
+
+.fa-facebook {
+
+    color: white;
+   padding: 5px;
+    margin-left: 20px;
+    border-radius: 5px;
+    height: 10px;
+   
+    text-decoration: none;
+  }
+  .fa-instagram {
+   
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    height: 20px;
+    
+    
+
+  }
+  .div3{
+    position: absolute;
+   margin-left: 700px;
+    bottom: 20px;
+    left: 0;
+    text-decoration: none;
+    
+
+  }
+  .fa{
+    color: aliceblue;
+    margin-left: 20px;
+
+  }
+
+  .nav h1,.div2-p{ 
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(100,end) forwards;
+
+    
+  }
+  .div2-p{
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing1 4s steps(100,end) forwards;
+  
+  }
+  @keyframes typing {
+    0%{width: 0;}
+    50%{width: 200px;}
+    100%{width: 50%;}
+    
+  }
+  @keyframes typing1 {
+    0%{width: 0;}
+    50%{width: 500px;}
+    100%{width: 120%;}
+    
+  }
+  .div1 img:hover{
+    
+        margin-left: 360px;
+        border-bottom: 5px solid rgb(13, 250, 29);
+       
+        border-right: 5px solid rgb(195, 227, 32);
+       
+       
+        
+        margin-top: 180px;
+        --s: 70px; /* the size on the corner */
+        --t: 10px;  /* the thickness of the border */
+        --g: 20px; /* the gap between the border and image */
+        
+        padding: calc(var(--g) + var(--t));
+        outline: var(--t) solid #ed424e; /* the color here */
+        outline-offset: calc(-1*var(--t));
+        -webkit-mask:
+          conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+          0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+          linear-gradient(#000 0 0) content-box;
+    
+  }
+  
+.div2 a{
+    color:rgb(250, 61, 13);
+}
+
+.text{
+ 
+
+  
+  border-right: 5px solid;
+  width: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing123 5s steps(19),
+              cursor .4s step-end infinite alternate;
+              color:rgb(190, 238, 67);
+
+}
+@keyframes typing123 {
+  from{width:0}    
+}
+.div4 {
+  width: 35%;
+  margin-left: 150px;
+  margin-bottom: 160px;
+  color: rgb(190, 238, 67);
+  font-family: 'Courier New', monospace;
+  text-indent: 80px;
+  text-indent: 50px;
+  text-align: justify;
+  
+  padding: 5px;
+
+}
+.aside{
+  height: 550px;
+  width: 390px;
+ line-height: 30px;
+
+  
+  float: right;
+  margin-top: 35px;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+
+.aside:hover {
+    transform: scale(1.1);
+}
+  
+
+
+.aside ul{
+  float:left;
+  list-style-type: none;
+  line-height: 20px;
+  text-decoration: none;
+  
+ 
+}
+.aside h4{
+  color: rgb(16, 108, 213);
+}
+.aside h3{
+  color: rgba(235, 9, 114, 0.992);
+}
+
